@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFlux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body class="bg-green-50 flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header>
+        <nav id="nav" class="bg-white shadow-md p-4 flex justify-between items-center">
+            <!-- Logo Section (Aligned to the left) -->
+            <div class="flex items-center space-x-3">
+                <a href="index.html">
+                    <img alt="Company Logo" height="40" src="https://storage.googleapis.com/a1aa/image/M2fV9dgXTRzMLaFNUwkFdW2CuZP2ufOIiAAOBnYNH4IGbrsTA.jpg" width="40">
+                </a>
+                <h1 class="text-2xl font-bold text-green-600">EcoFlux</h1>
+            </div>
+
+            <!-- Navigation Links and Search Section (Aligned to the right) -->
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="text-gray-700">Home</a>
+                <a href="features/features.html" class="text-gray-700">Features</a>
+                <a href="pricing/pricing.html" class="text-gray-700">Pricing</a>
+                <a href="new_FAQ.html" class="text-gray-700">Contact Us</a>
+                <li>
+                    <a href="new_Signup.html" onclick="toggleDropdown()">Login/SignUp</a>
+                    <div id="dropdown-menu" style="display: none; position: absolute; background-color: white; padding: 10px; border: 1px solid #ddd;">
+                        <a href="new_enterprise_signup.html" style="display: block; margin: 5px 0; color: green;">Enterprise Login/SignUp</a>
+                        <a href="new_Signup.html" style="display: block; margin: 5px 0; color: green;">User Login/SignUp</a>
+                    </div>
+                </li>
+                <div class="flex items-center space-x-2">
+                    <input type="search" placeholder="Enter to search" class="p-1 border rounded">
+                    <button class="p-2 bg-green-600 text-white rounded"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow flex items-center justify-center py-10">
+        <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row max-w-4xl w-full">
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-2xl font-bold mb-4">Begin your enterprise journey</h2>
+                <form>
+                    <div class="mb-4">
+                        <input class="w-full p-2 border rounded" placeholder="Company Name" type="text" />
+                    </div>
+                    <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
+                        <input class="w-full md:w-1/2 p-2 border rounded mb-4 md:mb-0" placeholder="First Name" type="text" />
+                        <input class="w-full md:w-1/2 p-2 border rounded" placeholder="Last Name" type="text" />
+                    </div>
+                    <div class="mb-4">
+                        <input class="w-full p-2 border rounded" placeholder="example.email@company.com" type="email" />
+                    </div>
+                    <div class="relative mb-4">
+                        <input class="w-full p-2 border rounded" placeholder="Enter at least 8+ characters" type="password" />
+                        <i class="fas fa-eye absolute right-3 top-3 text-gray-500"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input class="mr-2" id="terms" type="checkbox" />
+                        <label class="text-sm" for="terms">By signing up, I agree with the <a class="text-green-600" href="#">Terms of Use & Privacy Policy</a></label>
+                    </div>
+                    <button class="w-full bg-green-600 text-white p-2 rounded mb-4">Register</button>
+                    <div class="flex items-center mb-4">
+                        <hr class="flex-grow border-gray-300" />
+                        <span class="px-2 text-gray-500">OR</span>
+                        <hr class="flex-grow border-gray-300" />
+                    </div>
+                    <div class="flex justify-center space-x-4 mb-4">
+                        <button class="bg-red-600 text-white p-2 rounded-full"><i class="fab fa-google"></i></button>
+                        <button class="bg-blue-600 text-white p-2 rounded-full"><i class="fab fa-facebook-f"></i></button>
+                        <button class="bg-black text-white p-2 rounded-full"><i class="fab fa-apple"></i></button>
+                    </div>
+                    <p class="text-center text-sm">Returning user? <a class="text-green-600" href="#">Log in here</a></p>
+                </form>
+            </div>
+            <div class="w-full md:w-1/2 bg-gray-50 p-8 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-4">Join the Green Revolution with AI-Powered Energy for Enterprises</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center"><i class="fas fa-building text-xl text-gray-700 mr-4"></i><span>Leverage AI to optimize energy usage across your enterprise, tailored to your specific needs.</span></li>
+                    <li class="flex items-center"><i class="fas fa-chart-line text-xl text-gray-700 mr-4"></i><span>Reduce operational costs and enhance sustainability with intelligent energy management.</span></li>
+                    <li class="flex items-center"><i class="fas fa-cogs text-xl text-gray-700 mr-4"></i><span>Access advanced analytics and insights through our comprehensive Dashboard.</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="eight" class="bg-gray-900 text-white py-8">
+        <div class="footer__container max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
+                <!-- Logo and About Section -->
+                <div class="flex flex-col items-start">
+                    <img alt="Company Logo" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/M2fV9dgXTRzMLaFNUwkFdW2CuZP2ufOIiAAOBnYNH4IGbrsTA.jpg" width="40">
+                    <h1 class="text-xl font-bold text-green-600 mt-2">EcoFlux</h1>
+                    <p class="text-gray-300 mt-2 max-w-xs">We are committed to empowering sustainable energy solutions for individuals and businesses. Join us in creating a greener, more energy-efficient future with AI-driven insights and renewable energy optimization.</p>
+                </div>
+                <!-- Links Section -->
+                <div class="dog__categories">
+                    <h3 class="font-semibold text-white">Frequently Visited Pages</h3>
+                    <ul class="text-gray-300 space-y-2 mt-2">
+                        <li><a href="features/features.html">> Features</a></li>
+                        <li><a href="pricing/pricing.html">> Pricing</a></li>
+                        <li><a href="new_FAQ.html">> Contact us</a></li>
+                        <li><a href="index.html">> Home</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter Section -->
+                <div class="newsletter">
+                    <h3 class="font-semibold text-white">NEWSLETTER</h3>
+                    <h3 class="font-semibold text-white">SUBSCRIBE HERE NOW</h3>
+                    <div class="flex mt-2">
+                        <input type="text" placeholder="Email Address" class="p-2 border rounded-l">
+                        <button class="p-2 bg-green-600 text-white rounded-r"><i class="far fa-paper-plane"></i></button>
+                    </div>
+                    <p class="text-gray-300 mt-2">Subscribe to our mailing list and get updates to your email inbox.</p>
+                </div>
+            </div>
+            <!-- Social Links Section -->
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                <a href="#"><i class="fab fa-twitter text-white"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g text-white"></i></a>
+                <a href="#"><i class="fab fa-github text-white"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

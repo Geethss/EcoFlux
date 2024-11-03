@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFlux - FAQ and Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('.faq-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+          const content = this.nextElementSibling;
+          content.classList.toggle('hidden');
+          const icon = this.querySelector('i');
+          icon.classList.toggle('fa-chevron-down');
+          icon.classList.toggle('fa-chevron-up');
+        });
+      });
+    });
+  </script>
+</head>
+<body class="bg-green-50">
+  
+  <header>
+    <nav id="nav" class="bg-white shadow-md p-4 flex justify-between items-center">
+        <!-- Logo Section (Aligned to the left) -->
+        <div class="flex items-center space-x-3">
+            <a href="index.html">
+                <img alt="Company Logo" height="40" src="https://storage.googleapis.com/a1aa/image/M2fV9dgXTRzMLaFNUwkFdW2CuZP2ufOIiAAOBnYNH4IGbrsTA.jpg" width="40">
+            </a>
+            <h1 class="text-2xl font-bold text-green-600">EcoFlux</h1>
+        </div>
+
+        <!-- Navigation Links and Search Section (Aligned to the right) -->
+        <div class="flex items-center space-x-6">
+            <a href="index.html" class="text-gray-700">Home</a>
+            <a href="features/features.html" class="text-gray-700">Features</a>
+            <a href="pricing/pricing.html" class="text-gray-700">Pricing</a>
+            <a href="new_FAQ.html" class="text-gray-700">Contact Us</a>
+            <a href="new_Signup.html" class="text-gray-700">Login/SignUp</a>
+            <div class="flex items-center space-x-2">
+                <input type="search" placeholder="Enter to search" class="p-1 border rounded">
+                <button class="p-2 bg-green-600 text-white rounded"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <!-- Main Content -->
+  <div class="flex flex-col items-center justify-center min-h-screen space-y-10 pt-10 px-4">
+    <!-- FAQ Section -->
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl border border-gray-300">
+      <h2 class="text-lg font-semibold mb-4 text-green-700">Frequently Asked Questions</h2>
+      <div class="space-y-2">
+        <!-- FAQ Items -->
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>What is Ecoflux, and how does it help with sustainable energy?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Ecoflux is a platform dedicated to optimizing renewable energy solutions for homes and businesses. Using advanced AI and data analytics, we provide tailored configurations to maximize energy efficiency and reduce costs.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>How can I create an account with Ecoflux?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Creating an account is simple! Just click on "Sign Up" at the top of the page. Choose whether it is for personal or enterprise use, and follow the prompts.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>Is Ecoflux available in my area?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Ecoflux services are available globally, but specific offerings may vary. Contact us with your location to get detailed information about what is available in your region.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>Can I use Ecoflux if I already have solar panels or wind turbines installed?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Yes! Ecoflux can optimize your current setup to improve efficiency and suggest any adjustments for better performance.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>What types of renewable energy sources does Ecoflux support?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Ecoflux supports solar, wind, and hybrid energy solutions, along with energy storage options for both residential and commercial needs.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>Is my data safe with EcoFlux?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Absolutely. We prioritize your privacy and follow strict data security protocols. Your data is used only for optimizing your energy solution and is never shared without consent.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>What if I need technical assistance with my account or setup?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Our support team is here to help. You can reach out via the 'Contact Us' page, and we will get back to you as soon as possible.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>Does Ecoflux offer installation services?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Yes, Ecoflux partners with certified professionals to assist with the installation of renewable energy solutions. Let us know your location to find an installer near you.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>Is there a free trial for Ecoflux services?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Yes, we offer a 14-day free trial for new users. This provides full access to our features, allowing you to experience Ecoflux before committing.</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="flex justify-between items-center border-b py-2 faq-toggle cursor-pointer">
+            <span>Can I upgrade my account from personal to enterprise?</span>
+            <i class="fas fa-chevron-down text-green-700"></i>
+          </div>
+          <div class="hidden p-2">
+            <p>Absolutely! You can upgrade your account anytime under account settings to access enterprise-level tools and analytics for larger-scale energy needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- More Questions Section -->
+    <div class="flex flex-col justify-center w-full max-w-4xl">
+      <h2 class="text-lg font-semibold mb-4 text-green-700">Have More Questions?</h2>
+      <ul class="space-y-2">
+        <li class="flex items-center space-x-2">
+          <i class="fas fa-info-circle text-green-700"></i>
+          <a class="text-green-600" href="#">Visit our Help Center</a> for more detailed information and support.
+        </li>
+        <li class="flex items-center space-x-2">
+          <i class="fas fa-comments text-green-700"></i>
+          <span>Join our community forum to ask questions and share insights with other EcoFlux users.</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <i class="fas fa-envelope text-green-700"></i>
+          <span>Contact our friendly support team directly at <a class="text-green-600" href="mailto:support@ecoflux.com">support@ecoflux.com</a></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 w-full max-w-4xl">
+      <!-- Contact Us Form -->
+      <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/2">
+        <h2 class="text-lg font-semibold mb-4 text-green-700">Contact Us</h2>
+        <form class="space-y-4">
+          <input class="w-full p-2 border rounded" placeholder="Your Name" type="text">
+          <input class="w-full p-2 border rounded" placeholder="Your Email" type="email">
+          <textarea class="w-full p-2 border rounded h-24" placeholder="Your Message"></textarea>
+          <button class="w-full bg-green-600 text-white p-2 rounded" type="submit">Send Message</button>
+        </form>
+      </div>
+      <!-- Contact Information -->
+      <div class="flex flex-col justify-center w-full md:w-1/2">
+        <h2 class="text-lg font-semibold mb-4 text-green-700">We'd Love to Hear from You!</h2>
+        <ul class="space-y-2">
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-phone-alt text-green-700"></i>
+            <span>Give us a call at: <a class="text-green-600" href="tel:+1234567890">+1 234 567 890</a></span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-envelope text-green-700"></i>
+            <span>Send us an email at: <a class="text-green-600" href="mailto:support@ecoflux.com">support@ecoflux.com</a></span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-map-marker-alt text-green-700"></i>
+            <span>Visit us at: 123 Eco Street, Green City, GA 12345</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer id="eight">
+    <div class="footer__container">
+        <div class="dog__care ">
+            <span href="#"><img alt="Company Logo" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/M2fV9dgXTRzMLaFNUwkFdW2CuZP2ufOIiAAOBnYNH4IGbrsTA.jpg" width="40"/>
+                <h1 class="text-l font-bold text-green-600">EcoFlux</h1>
+            </span>
+            <p>We are committed to empowering sustainable energy solutions for individuals and businesses. Join us in creating a greener, more energy-efficient future with AI-driven insights and renewable energy optimization.</p>
+        </div>
+        <div class="dog__categories">
+            <h3>Frequently Visited Pages</h3>
+            <div class="categories">
+                <ul>
+                    <li><a href="index.html"> Home</li></a>
+                    <li><a href="pricing/pricing.html"> Pricing</li></a>
+                    <li><a href="new_FAQ.html"> Contact us</li></a>
+                    <li><a href="features/features.html"> Features</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <h3>SUBSCRIBE HERE NOW</h3>
+            <span>
+                <input type="text" placeholder="Email Address"><button class="btn"><i
+                        class="far fa-paper-plane"></i></button>
+            </span>
+            <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+        </div>
+
+    </div>
+    <br>
+    <div class="copyright">
+        <div class="share">
+            <div><i class="fab fa-facebook-f"></i></div>
+            <div><i class="fab fa-linkedin-in"></i></div>
+            <div><i class="fab fa-twitter"></i></div>
+            <div><i class="fab fa-google-plus-g"></i></div>
+            <div><i class="fab fa-github"></i></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

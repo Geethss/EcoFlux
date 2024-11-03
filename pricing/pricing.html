@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav id="nav" class="shadow-md p-4">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img alt="Company Logo" height="40" src="https://storage.googleapis.com/a1aa/image/M2fV9dgXTRzMLaFNUwkFdW2CuZP2ufOIiAAOBnYNH4IGbrsTA.jpg" width="40">
+                    </a>
+                    <h1 class="text-2xl font-bold text-green-600">EcoFlux</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="../index.html" class="text-gray-700">Home</a>
+                    <a href="../features/features.html" class="text-gray-700">Features</a>
+                    <a href="pricing.html" class="text-gray-700">Pricing</a>
+                    <a href="../new_FAQ.html" class="text-gray-700">Contact Us</a>
+                    <a href="../new_Signup.html" class="text-gray-700">Login/SignUp</a>
+                </div>
+                <div class="search-container">
+                    <input type="search" placeholder="Enter to search" class="p-1 border rounded">
+                    <button class="p-2 bg-green-600 text-white rounded"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pricing Section -->
+    <div class="pricing-container">
+        <h1>EcoFlux Pricing Plans</h1>
+        <p>Choose the plan that fits your eco needs best</p>
+        
+        <div class="toggle-container">
+            <label class="toggle-label">
+                <input type="checkbox" id="pricing-toggle" onclick="togglePricing()">
+                <span class="slider"></span>
+                <span class="toggle-text">Monthly / Yearly</span>
+            </label>
+        </div>
+
+        <div class="pricing-cards">
+            <div class="card">
+                <h2>Basic</h2>
+                <p class="price" id="basic-price">₹1000 / mo</p>
+                <p class="description">Ideal for eco-conscious individuals.</p>
+                <ul>
+                    <li>5 Projects</li>
+                    <li>Email Support</li>
+                    <li>Access to Resources</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            
+            <div class="card featured">
+                <h2>Pro</h2>
+                <p class="price" id="pro-price">₹2000 / mo</p>
+                <p class="description">Perfect for small eco-focused teams.</p>
+                <ul>
+                    <li>20 Projects</li>
+                    <li>Priority Email Support</li>
+                    <li>Exclusive Webinars</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            
+            <div class="card">
+                <h2>Enterprise</h2>
+                <p class="price" id="enterprise-price">₹5000 / mo</p>
+                <p class="description">Tailored for large organizations.</p>
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>24/7 Support</li>
+                    <li>Dedicated Account Manager</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="eight">
+        <div class="footer__container">
+            <div class="dog__care">
+                <span href="index.html">
+                    <img alt="Company Logo" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/M2fV9dgXTRzMLaFNUwkFdW2CuZP2ufOIiAAOBnYNH4IGbrsTA.jpg" width="40"/>
+                    <h1 class="text-l font-bold text-green-600">EcoFlux</h1>
+                </span>
+                <p>We are committed to empowering sustainable energy solutions for individuals and businesses. Join us in creating a greener, more energy-efficient future with AI-driven insights and renewable energy optimization.</p>
+            </div>
+            <div class="dog__categories">
+                <h3>Frequently Visited Pages</h3>
+                <div class="categories">
+                    <ul>
+                        <li><a href="../features/features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="../new_FAQ.html">Contact us</a></li>
+                        <li><a href="../index.html">Home</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <h3>SUBSCRIBE HERE NOW</h3>
+                <span>
+                    <input type="text" placeholder="Email Address">
+                    <button class="btn"><i class="far fa-paper-plane"></i></button>
+                </span>
+                <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+            </div>
+        </div>
+        <br>
+        <div class="copyright">
+            <div class="share">
+                <div><i class="fab fa-facebook-f"></i></div>
+                <div><i class="fab fa-linkedin-in"></i></div>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-google-plus-g"></i></div>
+                <div><i class="fab fa-github"></i></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pricing.js"></script>
+</body>
+</html>
